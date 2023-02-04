@@ -12,3 +12,118 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+.background-page {
+  background-color: #FFFFFF;
+}
+.page-header {
+  color: #000000;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+}
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  padding: 8px 50px;
+  gap: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.header-button {
+  width: 160px;
+  height: 36px;
+}
+.button-search {
+  width: 376px;
+  height: 52px;
+}
+.hero {
+  background-image: url("../images/background/hero.jpg");
+  width: 1200px;
+  height: 485px;
+}
+.caption {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text {
+  font-weight: 400;
+  text-align: center;
+}
+.advantages-list,
+.about-list {
+  text-align: center;
+}
+.advantages-image {
+  display:block;
+}
+.item {
+  background-color:rgba(131, 179, 211, 0.12);
+}
+.advantages-item {
+  background-color:#82B3D3;
+}
+.advantages-list .item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.about-item {
+  background-color: #FFFFFF;
+}
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.advantages-title,
+.advantages-description,
+.newsletter-caption,
+.newsletter-text {
+  color: #FFFFFF;
+}
+.newsletter {
+  background-image: url("../images/background/newsletter.jpg");
+  width: 1200px;
+  height: 414.86px;
+}
+.newsletter-button {
+  background-color: #82B3D3;
+  border-color: #82B3D3;
+}
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
