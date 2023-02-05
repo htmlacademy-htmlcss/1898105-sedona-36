@@ -25,6 +25,10 @@ body {
 .page-header {
   color: #000000;
 }
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -35,6 +39,7 @@ body {
   color: #000000;
 }
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -46,6 +51,7 @@ body {
   gap: 10px;
   border-radius: 4px;
   text-decoration: none;
+  border: 0;
 }
 .header-button {
   width: 160px;
@@ -57,8 +63,10 @@ body {
 }
 .hero {
   background-image: url("../images/background/hero.jpg");
+  background-color: #756157;
   width: 1200px;
   height: 485px;
+  text-align: center;
 }
 .caption {
   color: #000000;
@@ -113,10 +121,18 @@ body {
   background-image: url("../images/background/newsletter.jpg");
   width: 1200px;
   height: 414.86px;
+  text-align: center;
+  background-color: #756157;
 }
-.newsletter-button {
+.newsletter-button,
+.button-apply,
+.button-reset {
   background-color: #82B3D3;
   border-color: #82B3D3;
+}
+.newsletter-button {
+  width: 232px;
+  height: 52px;
 }
 .contacts-phone {
   font-weight: 400;
@@ -126,4 +142,82 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+.inner-background {
+  background-color: #756157;
+  background-image: url("../images/background/filter.jpg");
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.catalog-filter-group {
+  border: 0;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.catalog-filter-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+.button-apply {
+  width: 191px;
+  height: 36px;
+}
+.button-reset {
+  background-color: transparent;
+}
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.card-button-chosen {
+  background-color: #82B3D3;
+}
+.result-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.hotel-card-link,
+.pagination-link {
+  text-decoration: none;
+}
+.result-card-type,
+.result-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.result-card-rate {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pagination {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #000000;
+}
+.pagination-link {
+  color: #FFFFFF;
+}
+.pagination-current {
+  color: #000000;
 }

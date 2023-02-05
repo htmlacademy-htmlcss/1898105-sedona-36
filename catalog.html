@@ -6,6 +6,7 @@
     <title>Каталог</title>
   </head>
   <body>
+    <div class="background-page">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -44,6 +45,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <div class="inner-background">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -107,7 +109,8 @@
           <button class="button button-apply" type="submit">Применить</button>
           <button class="button button-reset" type="submit">Сбросить</button>
         </form>
-        <p class="hotels-found">
+      </div>
+        <p class="caption hotels-found">
           Найдено гостиниц:
         <span class="hotels-amound">38</span>
         </p>
@@ -134,7 +137,9 @@
           <p class="result-card-type">Гостиница</p>
           <b class="result-card-price">От 4000 ₽</b>
           <a class=" button result-card-button" href="#">Подробнее</a>
-          <button class="button card-button-chosen">В избранное</button>
+          <button class="button card-button-chosen" type="submit">
+            <span class="card-text">В избранное</span>
+          </button>
           <p class="stars star-4">
             <span class="visually-hidden">4 звезды</span>
           <p class="result-card-rate">Рейтинг: 8,5</p>
@@ -147,7 +152,7 @@
           <p class="result-card-type">Гостиница</p>
           <b class="result-card-price">От 5000 ₽</b>
           <a class="button result-card-button" href="#">Подробнее</a>
-          <button class="button card-button-chosen">В избранное</button>
+          <button class="button card-button-chosen" type="submit">в избранном</button>
           <p class="stars star-4">
             <span class="visually-hidden">4 звезды</span>
           <p class="result-card-rate">Рейтинг: 9,2</p>
@@ -160,7 +165,7 @@
           <p class="result-card-type">Гостиница</p>
           <b class="result-card-price">От 2500 ₽</b>
           <a class="button result-card-button" href="#">Подробнее</a>
-          <button class="button card-button-chosen">В избранное</button>
+          <button class="button card-button-chosen" type="submit">в избранное</button>
           <p class="stars star-3">
             <span class="visually-hidden">3 звезды</span>
           <p class="result-card-rate">Рейтинг: 6,9</p>
@@ -173,7 +178,7 @@
           <p class="result-card-type">Гостиница</p>
           <b class="result-card-price">От 1500 ₽</b>
           <a class="button result-card-button" href="#">Подробнее</a>
-          <button class="button card-button-chosen">В избранное</button>
+          <button class="button card-button-chosen" type="submit">в избранное</button>
           <p class="stars star-2">
             <span class="visually-hidden">2 звезды</span>
           <p class="result-card-rate">Рейтинг: 5,0</p>
@@ -202,7 +207,7 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">10</span>
+              <span>10</span>
             </a>
           </li>
         </ul>
@@ -250,5 +255,6 @@
           </a>
         </div>
     </footer>
+  </div>
   </body>
 </html>
