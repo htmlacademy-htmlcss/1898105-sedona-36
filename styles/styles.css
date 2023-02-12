@@ -327,16 +327,28 @@ margin: auto;
   width: 115px;
 
 }
+
+
 .inner-background {
   background-color: #756157;
   background-image: url("../images/background/filter.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
+  padding: 70px;
+  padding-top: 35px;
 }
 
 .inner-header-container {
   margin: 0 auto;
   width: 1060px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -345,6 +357,10 @@ margin: auto;
   line-height: 21px;
 }
 
+.breadcrumbs-item {
+  width: 15px;
+  margin-right: 10px;
+}
 .filter-wrapper {
   display: flex;
 }
@@ -367,7 +383,7 @@ margin: auto;
 }
 
 .inner-header-title {
-  margin-top: 0;
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -379,6 +395,7 @@ margin: auto;
   line-height: 23px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .button-apply {
@@ -391,7 +408,7 @@ margin: auto;
 }
 
 .result-wrapper {
-  margin: 0 auto;
+  margin: 50px 70px 60px 70px;
   width: 1060px;
   display: flex;
   flex-direction: column;
@@ -399,11 +416,14 @@ margin: auto;
 
 .settings {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .hotels-found {
-  width: 338px;
+  display: flex;
+  margin: 0;
 }
+
 
 .select-control {
   font-weight: 400;
@@ -411,13 +431,21 @@ margin: auto;
   line-height: 21px;
   width: 292px;
   margin-left: 200px;
+  height: 49px;
 }
 
 .result-view {
+  display: flex;
   margin: 0;
   padding: 0;
   margin-left: auto;
-  width: 160px;
+  list-style-type: none;
+}
+
+.result-view-item {
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .hotel-list {
@@ -426,6 +454,8 @@ margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 80px;
 }
 
 .hotel-card {
@@ -463,19 +493,20 @@ margin: auto;
   line-height: 20px;
 }
 
-.pagination {
+.pagination-list {
   margin: 0;
   padding: 0;
   display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-
   color: #000000;
+  list-style-type: none;
 }
 
 .pagination-item {
   width: 60px;
+  height: 60px;
   margin-right: 8px;
   background-color: #82B3D3;
 }
@@ -484,6 +515,7 @@ margin: auto;
 }
 .pagination-current {
   color: #000000;
+  background-color: #F2F2F2;
 }
 
 .newsletter-catalog {
