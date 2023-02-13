@@ -60,7 +60,9 @@ body {
 
 .navigation-logo {
   display: block;
+  position: relative;
   margin: 0;
+  margin-bottom: -6px;
   padding: 0;
   width: 138px;
   height: 70px;
@@ -202,8 +204,23 @@ margin: auto;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.about-item {
+.food-item {
   background-color: #FFFFFF;
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position: center 82px;
+}
+
+.house-item {
+  background-image: url(../images/housing.svg);
+  background-repeat: no-repeat;
+  background-position: center 82px;
+}
+
+.gift-item {
+  background-image: url(../images/gift.svg);
+  background-repeat: no-repeat;
+  background-position: center 82px;
 }
 
 .title {
@@ -217,6 +234,13 @@ margin: auto;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+}
+
+.title-food,
+.title-gift,
+.title-house {
+  margin-top: 183px;
+  margin-bottom: 30px;
 }
 
 .description {
@@ -252,8 +276,6 @@ margin: auto;
 
 .newsletter {
   background-image: url("../images/background/newsletter.jpg");
-  /*width: 1200px;*/
-  height: 414.86px;
   text-align: center;
   background-color: #756157;
   margin: 0;
@@ -463,6 +485,10 @@ margin: auto;
   border: 1px solid #E6E6E6;
 }
 
+.result-card-image {
+  padding: 20px;
+}
+
 .card-button-chosen {
   background-color: #82B3D3;
 }
@@ -477,16 +503,19 @@ margin: auto;
   line-height: 28px;
   color: #000000;
 }
+
 .hotel-card-link,
 .pagination-link {
   text-decoration: none;
 }
+
 .result-card-type,
 .result-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
+
 .result-card-rate {
   font-weight: 400;
   font-size: 16px;
@@ -497,27 +526,39 @@ margin: auto;
   margin: 0;
   padding: 0;
   display: flex;
-  font-weight: 700;
+  /*font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
-  color: #000000;
+  line-height: 36px;*/
   list-style-type: none;
 }
 
-.pagination-item {
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link,
+.pagination-show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
-  margin-right: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
   background-color: #82B3D3;
 }
-.pagination-link {
-  color: #FFFFFF;
-}
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
 }
 
+.pagination-show-more {
+  color: #000000;
+  background-color: #FFFFFF;
+}
 .newsletter-catalog {
   width: 1200px;
   background: #FFFFFF;
