@@ -53,6 +53,9 @@
             <a class="visually-hidden" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
+            <a class="visually-hidden" href="index.html">Стрелка</a>
+          </li>
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
@@ -126,18 +129,18 @@
                 <option value="popular">Сначала популярное</option>
               </select>
               <ul class="result-view">
-                <li>
-              <a href="#" class="button button-card">
+                <li class="result-view-item">
+              <a href="#" class="button-card">
                 <span class="visually-hidden">Показать карточками</span>
               </a>
               </li>
-              <li>
-              <a class="button button-slide" href="#">
+              <li class="result-view-item">
+              <a class="button-slide" href="#">
                 <span class="visually-hidden">Показать слайдами</span>
               </a>
               </li>
-              <li>
-              <a href="#" class="button button-list">
+              <li class="result-view-item">
+              <a href="#" class="button-list">
                 <span class="visually-hidden">Показать списком</span>
               </a>
               </li>
@@ -199,12 +202,7 @@
             <p class="result-card-rate">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
+          <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -229,10 +227,12 @@
         </div>
       </section>
       <section class="newsletter newsletter-catalog">
+        <div class="newsletter-wrapper">
         <h2 class="newsletter-caption newsletter-caption-catalog">Подпишитесь на рассылку</h2>
         <p class="newsletter-text newsletter-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
+
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span class="newsletter-email">Подписаться</span>
