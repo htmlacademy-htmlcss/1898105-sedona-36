@@ -44,9 +44,9 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation-item">
+
               <a class="button header-button" href="#">Хочу сюда!</a>
-            </li>
+
           </ul>
         </nav>
       </header>
@@ -80,20 +80,31 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Basin" checked>
-                Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="Basin" checked>
+                    <span class="control-mark">
+                      <svg class="sign-checked-checkbox" width="13" height="10" viewBox="0 0 13 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 0L4.5 7.4L1.1 3.5L0 4.7L4.5 9.9L12.2 1.3L11 0Z" />
+                      </svg>
+                    </span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Parking" checked>
-                Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="Parking" checked>
+                    <span class="control-mark">
+                      <svg class="sign-checked-checkbox" width="13" height="10" viewBox="0 0 13 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 0L4.5 7.4L1.1 3.5L0 4.7L4.5 9.9L12.2 1.3L11 0Z" />
+                      </svg>
+                    </span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                WI-FI
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">WI-FI</span>
                   </label>
                 </li>
               </ul>
@@ -103,28 +114,54 @@
               <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-housing" value="hotel" checked>
-                  Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="hotel" checked>
+                      <span class="control-mark">
+                        <svg class="sign-checked-radio" width="10" height="10" viewBox="0 0 10 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 5.5C0 2.73858 2.23858 0.5 5 0.5C7.76142 0.5 10 2.73858 10 5.5C10 8.26142 7.76142 10.5 5 10.5C2.23858 10.5 0 8.26142 0 5.5Z" />
+                        </svg>
+                      </span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-housing" value="motel">
-                  Мотель
+                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-housing" value="apartmens">
-                  Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="type-housing" value="apartmens">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group filter-cost">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <input class="cost-seting" type="text">
-              <input class="cost-seting" type="text">
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="0" name="min-price">
+                  <span class="range-input-text">от</span>
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="9000" name="max-price">
+                  <span class="range-input-text">до</span>
+                </label>
+              </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 226px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
             </fieldset>
               <div class="filter-button">
             <button class="button button-apply" type="submit">Применить</button>
@@ -136,15 +173,16 @@
           </div>
           <div class="result-wrapper">
             <div class="settings">
-              <p class="caption hotels-found">
+              <h2 class="caption hotels-found">
                 Найдено гостиниц:
-              <span class="hotels-amound">38</span>
-              </p>
+              <span class="hotels-amound">38</span></h2>
+              <div class="select">
               <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвое</option>
+                <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогое</option>
                 <option value="popular">Сначала популярное</option>
               </select>
+              </div>
               <ul class="result-view">
                 <li class="result-view-item result-view-item-current">
               <a href="#" class="button-card">
