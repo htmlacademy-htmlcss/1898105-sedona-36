@@ -44,9 +44,9 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation-item">
+
               <a class="button header-button" href="#">Хочу сюда!</a>
-            </li>
+
           </ul>
         </nav>
       </header>
@@ -195,5 +195,81 @@
         </div>
     </footer>
     </div>
+
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" />
+            </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <label class="field-caption" for="arrival-date">Дата Заезда:</label>
+            <span class="wrapper-form-arrival" for="error-text">
+            <input class="modal-form-field" type="text" value="27 апреля 2020" id="arrival-date" name="arrival-date">
+            <span class="error-text" id="error-text">Мы не можем отправить вас в прошлое.</span>
+          </span>
+
+            <label class="field-caption" for="departure-date">Дата Выезда:</label>
+            <span class="wrapper-form-departure" for="comment-text">
+            <input class="modal-form-field" type="text" value="1 сентября 2023" id="departure-date" name="departure-date" placeholder="Дата выезда">
+            <span class="comment-text" id="comment-text">На эти даты есть свободные номера. Пока есть.</span>
+            </span>
+            <label class="field-caption" for="number-adults">Взрослые:</label>
+
+            <div class="filter-group-number">
+              <button class="minus">
+                <span class="visually-hidden">Увеличить число</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z"/>
+                </svg>
+              </button>
+              <input class="modal-form-field-number" type="number" value="2" id="number-adults" name="number-adults" placeholder="">
+              <button class="plus">
+                <span class="visually-hidden">Уменьшить число</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                </svg>
+              </button>
+            </div>
+            <span class="field-caption-children form-label-icon">
+            <label class="field-caption field-caption-children" for="nnumber-children">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                  </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </span>
+            </span>
+           <div class="filter-group-number">
+              <button class="minus">
+                <span class="visually-hidden">Увеличить число</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z"/>
+                  </svg>
+              </button>
+              <input class="modal-form-field-number" type="number" value="2" id="number-children" name="number-children" placeholder="">
+              <button class="plus">
+                <span class="visually-hidden">Уменьшить число</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                  </svg>
+              </button>
+            </div>
+            <a class="button button-modal" href="#">Найти</a>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
