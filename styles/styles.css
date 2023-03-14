@@ -240,26 +240,13 @@ button:disabled {
 }
 
 .hero {
-  background-image: url("../images/background/hero.jpg");
+  background: url(../images/stairs.svg), url(../images/background/hero.jpg);
+  background-position: 0 428px, center;
   background-repeat: no-repeat;
   background-color: #756157;
   width: 1200px;
   height: 485px;
   text-align: center;
-}
-
-.hero-wrapper {
-  position: relative;
-}
-
-.hero-wrapper::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/stairs.svg");
-  background-size: 1200px 57px;
-  width: 1200px;
-  height: 57px;
-  bottom: 0;
 }
 
 .welcome-image {
@@ -750,8 +737,7 @@ button:disabled {
   width: 31px;
   height: 48px;
   text-align: center;
-  -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .minus,
@@ -793,8 +779,7 @@ button:disabled {
 
 .modal-form-field-number::-webkit-outer-spin-button,
 .modal-form-field-number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1124,8 +1109,12 @@ button:disabled {
   cursor: auto;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   outline: 3px solid#83B3D3;
+}
+
+.control:has(.control-input:disabled) {
+  pointer-events: none;
 }
 
 .catalog-filter-title {
@@ -1194,8 +1183,7 @@ button:disabled {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1355,8 +1343,7 @@ button:disabled {
   line-height: 21px;
   color: #333333;
   font-family: inherit;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 12px 20px;
   padding-right: 40px;
   margin-top: 8px;
